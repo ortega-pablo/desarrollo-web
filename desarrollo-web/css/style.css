@@ -1,0 +1,182 @@
+/* -------- Fuentes -------- */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* font-family: 'Raleway', sans-serif;
+font-family: 'Poppins', sans-serif; */
+
+/* -------- RESET -------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* -------- HEADER -------- */
+
+header {
+  width: 100vw
+}
+
+.my-nav {
+  background-color: #153737;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  width: 100vw;
+}
+
+
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  height: 30px;
+  font-size: 16px;
+  font-weight: 500;
+  position: relative;
+  text-transform: uppercase;
+}
+.nav-link::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 0px;
+  border-bottom: 2px solid #e97748;
+  transition: all 1s ease;
+}
+.nav-link:hover:before {
+  color: white;
+  width: 100%;
+}
+.navbar-brand{
+  padding-left: 20px;
+}
+.logo {
+  height: 50px;
+  width: 50px;
+  padding: 5px;
+}
+.navbar-toggler{
+  border: none;
+}
+
+/* -------- MAIN -------- */
+
+.hero {
+  width: 100vw;
+  height: 500px;
+  background-color: #153737;
+  background-image: url("../img/BarraMadera.jpg");
+  background-size: cover;
+  background-repeat: space;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.hero h2 {
+  color: white;
+  font-size: 60px;
+  font-family: "Raleway", sans-serif;
+  padding-bottom: 50px;
+  width: 80%;
+  text-align: center;
+}
+
+.selects {
+  width: 100%;
+  height: 200px;
+  background-color: #8a9b9b;
+  display: inline-flex;
+}
+
+.select-section {
+  width: 25%;
+  height: 100%;
+  border-left: 1px solid #153737;
+  text-align: center;
+  font-size: 100%;
+}
+
+.select-section a {
+  text-decoration: none;
+  color: white;
+  font-size: 100%;
+}
+
+.working {
+  width: 100%;
+  height: 410px;
+  position: relative;
+}
+
+.working img {
+  height: 300px;
+}
+
+.working p {
+  position: relative;
+  top: 0;
+  left: 600px;
+  width: 40%;
+  height: 100%;
+}
+
+.working1 {
+  position: absolute;
+  top: 40px;
+  left: 80px;
+}
+
+.working2 {
+  position: absolute;
+  top: 60px;
+  left: 310px;
+}
+
+.products {
+  width: 100%;
+  text-align: center;
+  align-items: center;
+}
+
+.primary-button {
+  background-color: #e97748;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+/* -------- FOOTER -------- */
+
+footer {
+  color: white;
+  background-color: #153737;
+  position: relative;
+  height: 60px;
+  text-align: center;
+}
+footer h2 {
+  position: absolute;
+  left: 0px;
+}
+footer div {
+  position: absolute;
+  right: 20px;
+}
+footer div a i {
+  font-size: 40px;
+  color: white;
+}
